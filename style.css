@@ -1,0 +1,192 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and global styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ffe0ec, #fce4ec);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background: #ec407a;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffd1dc;
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #880e4f;
+  }
+  
+  /* Section Styling */
+  section {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #f06292;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d81b60;
+  }
+  
+  /* Images */
+  img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+  }
+  
+  th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #f8bbd0;
+  }
+  
+  th {
+    background-color: #f06292;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  tr:hover {
+    background-color: #fff0f5;
+  }
+  
+  /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input, textarea {
+    padding: 12px;
+    border: 2px solid #f48fb1;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #ec407a;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    color: #777;
+  }
+
+  .welcome {
+    background: linear-gradient(to right, #ffeef2, #f8bbd0);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 1.2s ease-in;
+  }
+  
+  .welcome h1 {
+    font-size: 2.5rem;
+    color: #ad1457;
+    margin-bottom: 20px;
+  }
+  
+  .welcome p {
+    font-size: 1.1rem;
+    margin: 15px auto;
+    color: #4a4a4a;
+    max-width: 700px;
+  }
+  
+  .welcome button {
+    margin-top: 20px;
+    background-color: #ec407a;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .welcome button:hover {
+    background-color: #d81b60;
+  }
+  
+  /* Optional fade-in animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    section {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
